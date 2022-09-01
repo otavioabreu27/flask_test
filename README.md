@@ -8,7 +8,7 @@ Quando clonar o repositório criar um ambiente virtual, para isso, abra o cmd, n
 Após a criação, navegue até a pasta Scripts dentro da recém criada pasta venv e execute o arquivo activate.bat (QUALQUER DÚVIDA ME ACIONA)
 
 #### Instalando pacotes pip
-Com o ambiente virtual rodando será necessário realizar a instalação de alguns pacotes. Esses pacotes estão discriminados no arquivo "requirements.txt" e portanto para a instalação pip acontecer, navegue até a pasta venv no cmd e digite o código a seguir:
+Com o ambiente virtual rodando será necessário realizar a instalação de alguns pacotes. Esses pacotes estão discriminados no arquivo "requirements.txt" e portanto para a instalação pip acontecer, digite o código a seguir:
     pip install -r requirements.txt
 
 #### O arquivo "app.py"

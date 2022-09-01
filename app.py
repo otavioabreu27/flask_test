@@ -16,9 +16,6 @@ app.config['MYSQL_DB'] = 'Flask'
 # Instanciando um objeto que herda a classe my sql do mysqldb
 mysql = MySQL(app)
 
-# Instanciando o cursor mysql
-cursor = mysql.connection.cursor()
-
 # Este comando executa uma ação no banco usando linguagem dml ou ddl
 #   cursor.execute(''' CREATE TABLE table_name(field1, field2...) ''')
 
@@ -33,6 +30,9 @@ cursor = mysql.connection.cursor()
 # que no flask é chamada de template
 @app.route('/')
 def home():
+    # Instanciando o cursor mysql
+    cur = mysql.connection.cursor()
+    cur.close()
     return render_template('home.html')
 
 # O __name__ por padrão é main, portanto quando satisfazer essa função
